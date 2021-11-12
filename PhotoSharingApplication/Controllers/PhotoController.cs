@@ -9,6 +9,7 @@ using PhotoSharingApplication.Models;
 namespace PhotoSharingApplication.Controllers
 {
     [ValueReporter]
+    [HandleError(View = "Error")]
     public class PhotoController : Controller
     {
         private PhotoSharingContext context = new PhotoSharingContext();
@@ -110,6 +111,10 @@ namespace PhotoSharingApplication.Controllers
             {
                 return null;
             }
+        }
+        public ActionResult SlideShow()
+        {
+            throw new NotImplementedException("The SlideShow action is not yet ready");
         }
     }
 }
