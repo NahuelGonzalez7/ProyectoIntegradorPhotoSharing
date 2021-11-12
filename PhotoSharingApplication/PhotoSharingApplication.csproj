@@ -94,7 +94,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\flower.JPG" />
     <Content Include="Images\orchard.JPG" />
@@ -103,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PhotoController.cs" />
     <Compile Include="Controllers\ValueReporter.cs" />
     <Compile Include="Global.asax.cs">
@@ -133,10 +133,11 @@
     </None>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Photo\Index.cshtml" />
-    <Content Include="Views\Photo\Create.cshtml" />
-    <Content Include="Views\Photo\Delete.cshtml" />
     <Content Include="Views\Photo\Display.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Photo\Create.cshtml" />
+    <Content Include="Views\Shared\_PhotoGallery.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -146,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202111092334470_initial.resx">

@@ -5,51 +5,27 @@
 }
 
 <body>
-    <fieldset>
-        <legend>Photo</legend>
-    
-        <div class="display-label">
-             @Html.DisplayNameFor(model => model.Title)
-        </div>
-        <div class="display-field">
-            @Html.DisplayFor(model => model.Title)
-            @if (Model.PhotoFile != null)
-            {
-                <img width="800" src="@Url.Action("GetImage", "Photo",new { id=Model.PhotoID })" />
-            }
+    <div>
+        <h2>"@Model.Title"</h2>
 
-        </div>
-    
-        <div class="display-label">
-             @Html.DisplayNameFor(model => model.ImageMimeType)
-        </div>
-        <div class="display-field">
-            @Html.DisplayFor(model => model.ImageMimeType)
-        </div>
-    
-        <div class="display-label">
-             @Html.DisplayNameFor(model => model.Description)
-        </div>
-        <div class="display-field">
+        <img width="800" src="@Url.Action("GetImage", "Photo", new { id = Model.PhotoID })" />
+
+        <p>
             @Html.DisplayFor(model => model.Description)
-        </div>
-    
-        <div class="display-label">
-             @Html.DisplayNameFor(model => model.CreatedDate)
-        </div>
-        <div class="display-field">
-            @Html.DisplayFor(model => model.CreatedDate)
-        </div>
-    
-        <div class="display-label">
-             @Html.DisplayNameFor(model => model.UserName)
-        </div>
-        <div class="display-field">
+        </p>
+
+        <p>
+            @Html.DisplayNameFor(model => model.UserName):
             @Html.DisplayFor(model => model.UserName)
-        </div>
-    </fieldset>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id=Model.PhotoID }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
+        </p>
+
+        <p>
+            @Html.DisplayNameFor(model => model.CreatedDate):
+            @Html.DisplayFor(model => model.CreatedDate)
+        </p>
+
+        <p>
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
 </body>>

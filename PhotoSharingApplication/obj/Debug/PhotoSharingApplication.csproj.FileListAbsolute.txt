@@ -162,6 +162,5 @@ C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\ProyectoIntegr
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\ProyectoIntegradorMODELPHOTOSHARINGMVC-master\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.Migrations.initial.resources
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\ProyectoIntegradorMODELPHOTOSHARINGMVC-master\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.csproj.GenerateResource.cache
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\ProyectoIntegradorMODELPHOTOSHARINGMVC-master\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.csproj.CoreCompileInputs.cache
-C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\ProyectoIntegradorMODELPHOTOSHARINGMVC-master\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.csproj.CopyComplete
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\ProyectoIntegradorMODELPHOTOSHARINGMVC-master\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.dll
 C:\Users\Nahuel\Desktop\Nahuel\Programacion\Curso C#\Cuarta parte\ProyectoIntegradorMODELPHOTOSHARINGMVC-master\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.pdb

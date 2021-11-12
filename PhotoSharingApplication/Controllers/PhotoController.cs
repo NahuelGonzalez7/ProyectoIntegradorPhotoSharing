@@ -13,15 +13,31 @@ namespace PhotoSharingApplication.Controllers
     {
         private PhotoSharingContext context = new PhotoSharingContext();
 
-        //
-        // GET: /Photo/
 
         public ActionResult Index()
         {
-            return View("Index", context.Photos.ToList());
+            return View("Index");
         }
 
-        // GET: /Photo/Display/1
+        [ChildActionOnly]
+        public ActionResult _PhotoGallery(int number = 0)
+        {
+            List<Photo> photos;
+            if (number == 0)
+            {
+                photos = context.Photos.ToList();
+            }
+            else
+            {
+                photos = (
+                from p in context.Photos
+                orderby p.CreatedDate descending
+                select p).Take(number).ToList();
+            }
+            return PartialView("_PhotoGallery", photos);
+        }
+
+        
         public ActionResult Display(int id)
         {
             Photo photo = context.Photos.Find(id);
@@ -32,7 +48,7 @@ namespace PhotoSharingApplication.Controllers
             return View("Display", photo);
         }
 
-        // GET: /Photo/Create
+       
         public ActionResult Create()
         {
             Photo newPhoto = new Photo();
@@ -62,7 +78,7 @@ namespace PhotoSharingApplication.Controllers
             }
         }
 
-        // GET: /Photo/Delete/1
+        
         public ActionResult Delete(int id)
         {
             Photo photo = context.Photos.Find(id);
